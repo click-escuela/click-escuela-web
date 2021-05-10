@@ -1,0 +1,255 @@
+
+  @import '../../../assets/styles/color-pallete.scss';
+
+  menu {
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    svg{
+      overflow: inherit;
+    }
+    //estilos de la barra lateral izquierda
+    .menu-nav{
+      position: fixed;
+      top: 0;
+      opacity: 0.5s;
+      display: flex;
+      width: 100%;
+      height: 100px;
+      background-color: $custom-blue;
+      box-shadow: 12px 1px 20px 0px rgba(0,0,0,0.4); 
+      color: white;
+      align-items: center;
+      flex-direction: row;
+      z-index: 999;
+      overflow: hidden;
+      
+     
+    }
+
+    .hamburger-menu-trigger
+    {
+      width: 50px;
+      height: 40px;
+      position: absolute;
+      right: 2em;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hamburger-menu .hamburger-path
+    {
+      fill: $green
+    }
+
+    #medium1, #medium2,#up,#down{
+      transition: 0.5s ease-in-out;
+    }
+
+    .hamburger-menu-trigger.openMenu #medium1{
+      transform: rotate(45deg);
+      transform-origin: center center;
+    }
+
+    button{
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+    }
+
+    .hamburger-menu-trigger.openMenu #medium2{
+      transform: rotate(-45deg);
+      transform-origin: center;
+    }
+
+    .hamburger-menu-trigger.openMenu #up, .hamburger-menu-trigger.openMenu #down{
+      opacity: 0;
+    }
+
+    .hamburger-path{
+      transition: 0.5s ease-in-out;
+    }
+
+    .hamburger-menu-trigger.openMenu .hamburger-path{
+      fill: red !important;
+    }
+    
+    
+   
+    .menu-option-container
+    {
+      width: 69vw;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+
+    .menu-nav .menu-item{
+      width: 200px;
+      margin-right: 2em;
+
+    }
+    p{
+      display: inline-flex;
+      margin: 0;
+      margin-left: 0.5em;
+    }
+
+    ::ng-deep path{
+      fill: #9acd8d ;
+    }
+
+    .menu-option{
+      background-color: rgba(0, 0, 0, 0.479);
+      padding: 0.5em;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+     
+      overflow: hidden;
+      text-overflow: clip;
+
+    }
+
+    .menu-option:hover{
+      background-color: $blue-E
+    }
+
+    .menu-option-container{
+      transition: 0.5s ease-in-out;
+      
+    }
+
+    .show-menu{
+      transform: translateX(20%) !important;
+    }
+
+    .menu-option{
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width:728px){
+    
+    .option-scroll{
+      width: 50%;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 100px;
+      transform: translateX(100%);
+    }
+    
+    .menu-option-container
+    {
+      width: 100%;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 100px;
+      transform: translateX(110%);
+
+    }
+    .menu-option{
+      flex-direction: row !important;
+      height: unset !important;
+      max-width: 72px;
+      justify-content: start !important;
+    }
+
+    svg{
+      margin-right: 0.5em;
+    }
+    
+
+    
+
+    .menu-option{
+      border-radius: 0;
+      height: 40px;
+      border-bottom: 1px solid gray;
+      background-color: rgba(0, 0, 0, 0.918);
+    }
+
+    .menu-option:last-child
+    {
+      border-radius: 0 0 0 10px;
+    }
+
+    .hamburger-menu-trigger
+    {
+      display: flex;
+    }
+
+    .menu-nav{overflow: unset;}
+
+    .menu-option{
+      max-width: none;
+
+    }
+
+    .button-scroll{
+      display: none;
+    }
+
+    .option-scroll{
+      top: 0;
+    }
+
+      
+    }
+
+    
+
+    .svg-icon{
+      width: 25px;
+      height: 25px;
+    }
+
+    .menu-option{
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height:100px;
+      width: 100%;
+    }
+
+    .menu-option.selected{
+      background-color: rgba(0, 0, 0, 0.834);
+
+    }
+
+    .option-scroll{
+      position: relative;
+      height: 100px;
+      transition: 0.5s ease-in-out;
+     
+    }
+
+    .option-scroll.second-page{
+      transform: translateY(-100px);
+    }
+
+    .option-scroll::-webkit-scrollbar{
+      display: none;
+    }
+
+    .button-scroll{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top:35px;
+      right: -20px;
+      z-index: 9999999;
+      background-color: #9acd8d;
+      border-radius: 50%;
+    }
+
+    ::ng-deep .button-scroll svg path{
+      fill: black !important;
+    }
