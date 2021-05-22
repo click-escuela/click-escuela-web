@@ -2077,3 +2077,30 @@ animation-delay: 0.5s;
   line-height: 1em;
 
 }
+
+.right-lateral,.left-lateral{
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  z-index: 99;
+  filter: drop-shadow( 2px 2px 12px black);
+  top: 95px;
+  transition: 0.9s ease-in-out;
+}
+.right-lateral img,.left-lateral img{
+  width: 100%;
+  
+}
+.right-lateral{
+  right: 0;
+  transform: translate(100%);
+}
+.left-lateral{
+  left: 0;
+  transform: translate(-100%);
+}
+
+.right-lateral.show-presentation, .left-lateral.show-presentation
+{
+  transform: translate(0);
+}

@@ -476,6 +476,8 @@
 
 </div>
 
+
+
 <app-mainmenu (navigation)="navigateTo($event)" [selectedIndex]="currentPage"></app-mainmenu>
 <div class="page-number" #pageNumberContainer>
   <span #pageNumber [innerHtml]='currentPage'>1</span>
@@ -549,6 +551,12 @@
 </div>
 <div class="container principal">
   <section class="container-section" style="padding: 0;" #pageSection>
+    <div class="right-lateral" [ngClass]="{'show-presentation': presentationNumber===1 && currentPage==0}">
+      <img src="../../../assets/images/right-lateral.png" alt="">
+     </div>
+     <div class="left-lateral" [ngClass]="{'show-presentation': presentationNumber===1 && currentPage==0}">
+       <img src="../../../assets/images/left-lateral.png" alt="">
+      </div>
     <div class="row first-row" style="margin-top: 109px;">
       <div class="col-12">
         <div class="fade-in">
