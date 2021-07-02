@@ -2104,3 +2104,15 @@ animation-delay: 0.5s;
 {
   transform: translate(0);
 }
+
+.second-presentation{
+  background: url(../../../assets/images/blackboard.jpg);
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.second-presentation span{
+  text-align: start;
+  text-indent: 10px;
+}
+

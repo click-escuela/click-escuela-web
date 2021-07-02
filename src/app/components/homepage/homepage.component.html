@@ -584,13 +584,13 @@
 
       <div class="second-presentation" [ngClass]="{'show-presentation': presentationNumber===1}" (click)="presentationNumber=0">
         <span [ngClass]="{'showed': presentationNumber===1}">
-          ClickEscuela es una herramienta <br> que permite mejorar la administración
-            de los establecimientos educativos
+          ClickEscuela es una herramienta que permite mejorar la administración de los establecimientos educativos,
+
+          emitiendo un balance general de gastos,  brindando información de cuotas adeudas y automatizando 
+          
+          tareas
         </span> 
-        <span [ngClass]="{'showed': presentationNumber===1}">
-            Brindando informacion de cuotas adeudas, automatizando tareas y
-            emitiendo un balance general de gastos.
-        </span>
+        
         <span [ngClass]="{'showed': presentationNumber===1}">
           Ademas agiliza el trabajo de los docentes, aumenta la
           participación de los padres en el proceso educativo de sus hijos. 
@@ -626,50 +626,6 @@
 
     </div>
 
-    <!-- <div class="row"
-      style="margin-top: 0.6em; height: 60%; height: 60%;width: 80%;border-radius: 2em;overflow: hidden;">
-      <div class="col-12 col-md-4">
-        <div class="row title-card" style="display:flex; text-align: center;justify-content: center; ;">
-
-          <span style="padding:2em; color: whitesmoke;">A un solo Click de distancia</span>
-        </div>
-        <div class="row title-body" style="display:flex; text-align: center;justify-content: center;">
-
-          <span style="padding:2em; color: black;">ClickEscuela es una herramienta que permite mejorar la administración
-            de los establecimientos educativos, brindando informacion de cuotas adeudas, automatizando tareas y
-            emitiendo un balance general de gastos.</span>
-        </div>
-      </div>
-      <div class="col-12 col-md-8 explain-info"
-        style="display:flex;justify-content: space-evenly; align-items: center; flex-direction: column;">
-
-        <span style="color: black; width:80%; font-size: 1.5em;">Ademas agiliza el trabajo de los docentes, aumenta la
-          participación de los padres en el proceso educativo de sus hijos, formando un canal directo entre estos y la
-          escuela, en donde se puede seguir la asistencia a clase, tareas y calificaciones.</span>
-        <button (click)="changePage(1)" mat-button style="margin-top: 2em;" class="start-way">Iniciar Recorrido</button>
-        <svg class="arrow-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 233.74 283.16">
-          <defs>
-            <style>
-              .cls-11 {
-                fill: none;
-                stroke: #9acd8d;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-width: 14px;
-              }
-            </style>
-          </defs>
-          <path id="arrow3" class="cls-11" d="M8.64,245.41,100.24,337A23.89,23.89,0,0,0,134,337l94.38-94.39"
-            transform="translate(-1.64 -67.84)" />
-          <path id="arrow2" class="cls-11" d="M22.4,163.81l80.13,80.13a20.91,20.91,0,0,0,29.53,0l82.56-82.56"
-            transform="translate(-1.64 -67.84)" />
-          <path id="arrow1" class="cls-11" d="M24.71,77.21l78.21,78.21a20.38,20.38,0,0,0,28.81,0l80.58-80.58"
-            transform="translate(-1.64 -67.84)" />
-        </svg>
-
-      </div>
-    </div> -->
 
   </section>
 
@@ -682,9 +638,9 @@
         <div class="mycard admin-card">
 
           <span>
-            <p class="span-title">Interfaz administrativa:</p>Esta seccion es nuestro fuerte es la base en lo que fue
-            concebido Click Escuela. Pensada para el control y generacion de metricas
-            referidas a los pagos para llevar a cabo un seguimiento de la contabilidad.
+            <p class="span-title">Interfaz administrativa:</p>Esta seccion es nuestro fuerte, es la base en lo que fue
+            concebido Click Escuela. Pensada para el control y generación de métricas
+            referidas a los pagos para llevar a cabo un seguimiento de la contabilidad del establecimiento.
 
           </span>
           <img src="../../../assets/images/administratives.png" alt="">
@@ -705,13 +661,11 @@
             </section>
             <section class="section-info">
 
-              <span style="color: black;"><b class="titles">Notificaciones:</b>Se pondran configurar notificaciones
-                automaticas para enviar a padres que se atrasen en el pago de cuota. </span>
+              <span style="color: black;"><b class="titles">Notificaciones:</b>Se pondran configurar notificaciones automaticas para enviar a padres que se atrasen en el pago de cuota. </span>
             </section>
             <section class="section-info">
 
-              <span><b class="titles">Metricas:</b> Ver el balance por mes del pago de cuotas, cantidad de padres que se
-                atrasaron con el pago de la cuota, control de gastos etc.</span>
+              <span><b class="titles">Metricas:</b> Ver el balance por mes del pago de cuotas, cantidad de padres que se atrasaron con el pago de la cuota, control de gastos etc.</span>
             </section>
 
           </span>
@@ -754,7 +708,7 @@
             Padres
             <section class="section-info">
 
-              <span style="color: black;"><b class="titles">Asistencia:</b> Recibira diariamente la confirmacion de la
+              <span style="color: black;"><b class="titles">Asistencia:</b> Recibira diariamente la confirmación de la
                 asistencia de su hijo.</span>
             </section>
             <section class="section-info">
@@ -766,7 +720,7 @@
             <section class="section-info">
 
               <span><b class="titles">Mensajeria:</b> Podra interactuar con los profesores y consultar el cuaderno de
-                comunicado vritual</span>
+                comunicado virtual</span>
             </section>
 
           </span>
@@ -779,7 +733,7 @@
           <div class="mycard second-card card-flip front" (click)="selectSecond()"
             [ngClass]="{'stack-card': selectedFirst, 'stack-card-left': selectedThird, 'showback':selectedSecond}">
             <span class="teacher-span resume-info">
-              <p class="span-title">Seccion Profesores</p>Pensado para el control y administracion de las tareas, carga
+              <p class="span-title">Sección Profesores</p>Pensado para el control y administración de las tareas, carga
               de notas y comunicados
               <button matTooltip="Ver mas" class="view-more">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.62 296.14">
@@ -1265,9 +1219,9 @@
 
                 <li>Generacion de facturas.</li>
                 
-                <li>Envio de notificaciones por mail y whatsapp.</li>
+                <li>Envió de notificaciones por mail y whatsapp.</li>
                 
-                <li>Reporteria basica</li> 
+                <li>Reporteria básica</li> 
                 
                 <li>Todas las demas funcionalidades que no se nombraron</li>
             </ul>
